@@ -9,15 +9,19 @@ class Show extends React.Component{
                  <link rel="stylesheet" href="/css/app.css"/>  
             <h1>Show Page</h1>
 
-            Img:<br/> <img src ={product.img} /> <br/>
+            <strong>Cover</strong>:<br/> <img src ={product.img} /> <br/>
 
-            Title: {product.name}<br/>
+            <strong>Title</strong>: {product.name}<br/>
 
-            Description: {product.description}<br/>
+            <strong>Description</strong>: {product.description} <br/>
 
-            Price: ${product.price}<br/>
+            <strong>Written By</strong>: {product.author} <br/>
 
-            Quantity: {product.qty}<br/>
+            <strong>Artwork By</strong>: {product.art} <br/>
+
+            <strong>Price</strong>: ${product.price}<br/>
+
+            <strong>Quantity</strong>: {product.qty}<br/>
 
             <a href = '/comics'> Back </a>
             </div>

@@ -12,18 +12,20 @@ class Index extends React.Component{
                     {this.props.products.map((product, i) => {
                         return(
                             <li key = {i}>
-                                Img:<br/> <img src ={product.img} width = '170' height = '262' />
+                                <strong>Cover</strong>:<br/> <img src ={product.img} width = '170' height = '262' />
                                 <br/>
 
-                                Title: <a href = {`/comics/${product.id}`}> {product.name}</a>
+                                <strong> Title</strong>: <a href = {`/comics/${product.id}`}> {product.name}</a>
                                 {' '} <br/>
-                                Description: {product.description} <br/>
+                                {/* Description: {product.description} <br/> */}
 
-                                Price: ${product.price}
+                                <strong>Price</strong>: ${product.price}
                                 <br/>
 
-                                Quantity: {product.qty}
+                                <strong>Quantity</strong>: {product.qty}
                                 <br/>
+
+                                
 
                                 <a href={`/comics/${product._id}/edit`}>Edit This Comic</a>
 

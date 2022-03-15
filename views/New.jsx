@@ -7,15 +7,19 @@ class New extends React.Component{
             <h1>New Comic Page</h1>
             <form action = "/comics" method = "POST">
             
-            Title: <input type="text" name="name"/><br/>
+            <strong>Title</strong>: <input type="text" name="name"/><br/>
 
-            Description: <input type="text" name="description"  /><br/>
+            <strong>Description</strong>: <input type="text" name="description"  /><br/>
 
-            Img: <input type = "text" name = "img"/> <br/>
+            <strong>Written By</strong>: <input type = 'text' name = 'author' /> <br/>
 
-            Price: <input type = "text" name = "price" /> <br/>
+            <strong>Artwork By</strong>: <input type = "text" name = 'art'/><br/>
 
-            Quantity: <input type = "text" name = "qty"/> <br/>
+            <strong>Cover</strong>: <input type = "text" name = "img"/> <br/>
+
+            <strong>Price</strong>: <input type = "text" name = "price" /> <br/>
+
+            <strong>Quantity</strong>: <input type = "text" name = "qty"/> <br/>
 
                 <input type ="submit" name = "" value = "Create Comic"/>
             </form>
