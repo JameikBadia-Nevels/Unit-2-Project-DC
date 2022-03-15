@@ -8,11 +8,12 @@ class Show extends React.Component{
             <div>
                  <link rel="stylesheet" href="/css/app.css"/>  
             <h1>Show Page</h1>
-            Title: {product.name}<br/>
-              
-            Description: {product.description}.<br/>
 
-            Img: {product.img}<br/>
+            Img:<br/> <img src ={product.img} /> <br/>
+
+            Title: {product.name}<br/>
+
+            Description: {product.description}<br/>
 
             Price: ${product.price}<br/>
 
