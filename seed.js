@@ -7,7 +7,7 @@ const seeds =
 [
     {
           name: 'The Batman Who Laughs: The Grimm Knight',
-          description: 'The origin of the most dangerous Dark Knight of all!',
+          description:'The origin of the most dangerous Dark Knight of all!',
           img: 'https://m.media-amazon.com/images/I/51GLdq5L8LL.jpg',
           author: 'Scott Snyder, James Tynion IV',
           art: 'Eduardo Risso',

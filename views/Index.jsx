@@ -7,37 +7,37 @@ class Index extends React.Component{
         return(
             <div>
                  <link rel="stylesheet" href="/css/app.css"/>  
-                <h1>Comic Index Page</h1>
-                <ul>
+                 <header class = "header"></header>
+                 <br/>
+                <h1>DC One Stop Comic Stop</h1>
+                
+                <div>
                     {this.props.products.map((product, i) => {
                         return(
-                            <li key = {i}>
-                                <strong>Cover</strong>:<br/> <img src ={product.img} width = '170' height = '262' />
+
+                            <div class = "picIndex" key = {i}>
+
+                                 <img class = 'picture'src ={product.img} width = '170' height = '262' />
                                 <br/>
+                            
+                                <div class = "textIndex">
+                                    <strong>Title:</strong> <a href = {`/comics/${product.id}`}> {product.name}</a>
+                                    {' '} <br/>
+                                    {/* Description: {product.description} <br/> */}
 
-                                <strong> Title</strong>: <a href = {`/comics/${product.id}`}> {product.name}</a>
-                                {' '} <br/>
-                                {/* Description: {product.description} <br/> */}
+                                    <strong>Price:</strong> ${product.price}
+                                    <br/>
 
-                                <strong>Price</strong>: ${product.price}
-                                <br/>
+                                    <strong>Quantity:</strong> {product.qty > 0 ? product.qty: 'Out of Stock'}
+                                    <br/>
 
-                                <strong>Quantity</strong>: {product.qty}
-                                <br/>
+                                </div>
 
-                                
 
-                                <a href={`/comics/${product._id}/edit`}>Edit This Comic</a>
-
-                                <form action = {`/comics/${product._id}?_method=DELETE`} method="POST">
-
-                                    <input type = "submit" value = "DELETE"/> 
-
-                                </form>
-                            </li>
+                            </div>
                         )
                     })}
-                </ul>
+                </div>
                 <nav>
                     <a href='/comics/new'>Create a New Comic</a>
                 </nav>

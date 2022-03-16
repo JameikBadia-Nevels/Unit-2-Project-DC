@@ -13,6 +13,7 @@ qty: {type: Number, required: true}
 
 })
 
+
 const Product = mongoose.model('Product', dcSchema)
 
 module.exports = Product

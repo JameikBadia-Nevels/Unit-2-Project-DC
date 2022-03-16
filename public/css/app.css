@@ -1,0 +1,43 @@
+.picIndex{
+    /* display: flex; */
+    color:#DB162F ;
+}
+.textIndex{
+    border-style: groove;
+}
+.picture{
+    display: grid;
+    justify-self: center;
+    border-style:groove;
+    border-radius: 1em;
+    border-color:#FDCA40 ;
+}
+/* heading */
+h1{
+    display: flex;
+    background-color: #3772FF;
+    color: #E6E8E6;
+    justify-content: center;
+    border-style: groove;
+}
+body{
+    display: grid;
+    max-width: 80%;
+    max-height: 70%;
+    background-color: cadetblue;
+    /* background-color: #E6E8E6 ;  */
+    align-content: center;
+    border-style: double;
+}
+.form{
+    display: grid;
+    align-content: center;
+    padding: 15px;
+    background-color: #E6E8E6;
+    font-style: italic;
+    border-style: solid;
+}
+.submitButton{
+    color:#3772FF;
+    background-color:#E6E8E6 ;
+}

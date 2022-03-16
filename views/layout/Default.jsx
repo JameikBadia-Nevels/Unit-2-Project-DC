@@ -8,7 +8,9 @@ class DefaultLayout extends React.Component{
                     {/* charset needs to be Camel Cased in JSX */}
             <meta charSet="utf-8"/>
         {/* This let us dynamically create the title */}
+        <header>
             <title>{this.props.title}</title>
+            </header>
                 </head>
                 <body>
                 <h1>{this.props.title}</h1>
