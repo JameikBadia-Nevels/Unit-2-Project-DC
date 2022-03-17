@@ -24,10 +24,10 @@ class New extends React.Component{
 
             <strong>Quantity:</strong> <input type = "text" name = "qty"/> <br/>
 
-                <input class = "submitButton" type ="submit" name = "" value = "Create Comic"/>
+                <input className = "submitButton" type ="submit" name = "" value = "Create Comic"/>
             </form>
 
-            <a href = '/comics'> Back </a>
+            <a  className = 'back' href = '/comics'> ⬅️ Back </a>
         </div>
         )
     }

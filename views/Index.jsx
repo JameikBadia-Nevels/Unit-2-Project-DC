@@ -7,20 +7,20 @@ class Index extends React.Component{
         return(
             <div>
                  <link rel="stylesheet" href="/css/app.css"/>  
-                 <header class = "header"></header>
+                 <header className= "header"></header>
                  <br/>
-                <h1>DC One Stop Comic Stop</h1>
+                <h1>DC Comic Shop</h1>
                 
-                <div>
+                <div className='og'>
                     {this.props.products.map((product, i) => {
                         return(
 
-                            <div class = "picIndex" key = {i}>
+                            <div className="picIndex" key = {i}>
 
-                                 <img class = 'picture'src ={product.img} width = '170' height = '262' />
+                                 <img className= 'picture'src ={product.img} width = '170' height = '262' />
                                 <br/>
                             
-                                <div class = "textIndex">
+                                <p className ="textIndex">
                                     <strong>Title:</strong> <a href = {`/comics/${product.id}`}> {product.name}</a>
                                     {' '} <br/>
                                     {/* Description: {product.description} <br/> */}
@@ -31,15 +31,15 @@ class Index extends React.Component{
                                     <strong>Quantity:</strong> {product.qty > 0 ? product.qty: 'Out of Stock'}
                                     <br/>
 
-                                </div>
+                                </p>
 
 
                             </div>
                         )
                     })}
                 </div>
-                <nav>
-                    <a href='/comics/new'>Create a New Comic</a>
+                <nav >
+                    <a className='create' href='/comics/new'>Create a New Comic</a>
                 </nav>
             </div>
         )

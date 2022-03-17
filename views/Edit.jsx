@@ -29,7 +29,7 @@ class Edit extends React.Component{
             <input class = "submitButton" type="submit" value="Submit Changes"/>
             
         </form>
-        <a href = '/comics'> Back </a>
+        <a  className = 'back' href = '/comics'> ⬅️ Back </a>
         </DefaultLayout>
       )
     }

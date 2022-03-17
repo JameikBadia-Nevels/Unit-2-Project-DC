@@ -1,13 +1,27 @@
 .picIndex{
-    /* display: flex; */
+    /* display: grid;
+    grid-template-columns:150px 150px 150px ;
+    grid-template-rows: 150px auto;
+    grid-gap: 15px 15px; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin:15px;
     color:#DB162F ;
 }
+.og{
+    display: flex;
+    flex-wrap: wrap;
+}
 .textIndex{
-    border-style: groove;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-column: 150px auto; */
+    word-wrap: break-word;
+    max-width: 170px;
 }
 .picture{
-    display: grid;
-    justify-self: center;
+    /* display: grid; */
+    /* justify-self: center; */
     border-style:groove;
     border-radius: 1em;
     border-color:#FDCA40 ;
@@ -21,13 +35,12 @@ h1{
     border-style: groove;
 }
 body{
-    display: grid;
-    max-width: 80%;
+    /* display: grid; */
+    max-width: 100%;
     max-height: 70%;
-    background-color: cadetblue;
-    /* background-color: #E6E8E6 ;  */
-    align-content: center;
-    border-style: double;
+    background-color: #E6E8E6 ; 
+    /* align-items: center; */
+    /* border-style: double; */
 }
 .form{
     display: grid;
@@ -37,7 +50,33 @@ body{
     font-style: italic;
     border-style: solid;
 }
+/* all nav and buttons */
 .submitButton{
     color:#3772FF;
     background-color:#E6E8E6 ;
+    font-size: medium;
+}
+.buy{
+    color:#3772FF;
+    background-color:#E6E8E6 ;
+    font-size: medium;
+}
+.back{
+    font-size: medium; 
+    color:#DB162F
+}
+.edit{
+    font-size: medium; 
+    color:#DB162F
+}
+.delete{
+    color:#DB162F;
+    background-color:#E6E8E6 ;
+    font-size: medium; 
+    border-color: #DB162F;
+}
+.create{
+    color:#3772FF;
+    font-size: medium; 
+    border-color: #DB162F;
 }
