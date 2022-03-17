@@ -2,9 +2,11 @@ const React = require('react')
 
 class New extends React.Component{
     render(){
-        return (<div>
+        return (
+        <div>
              <link rel="stylesheet" href="/css/app.css"/>
             <header>
+            <a  className = 'back' href = '/comics'> ⬅️ Back </a>
             <h1>New Comic Page</h1>
             </header>
 
@@ -23,11 +25,13 @@ class New extends React.Component{
             <strong>Price:</strong> <input type = "text" name = "price" /> <br/>
 
             <strong>Quantity:</strong> <input type = "text" name = "qty"/> <br/>
+            
+            <strong>Main Character:</strong> <input type = "text" name = "mc"/> <br/>
 
                 <input className = "submitButton" type ="submit" name = "" value = "Create Comic"/>
             </form>
 
-            <a  className = 'back' href = '/comics'> ⬅️ Back </a>
+            
         </div>
         )
     }

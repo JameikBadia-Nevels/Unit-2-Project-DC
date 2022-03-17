@@ -7,8 +7,13 @@ class Index extends React.Component{
         return(
             <div>
                  <link rel="stylesheet" href="/css/app.css"/>  
-                 <header className= "header"></header>
+                 <header className= "header">
+                 <nav >
+                    <a className='create' href='/comics/new'>Create a New Comic</a>
+                </nav>
+                 </header>
                  <br/>
+                
                 <h1>DC Comic Shop</h1>
                 
                 <div className='og'>
@@ -17,11 +22,11 @@ class Index extends React.Component{
 
                             <div className="picIndex" key = {i}>
 
-                                 <img className= 'picture'src ={product.img} width = '170' height = '262' />
+                                 <img className= 'picture'src ={product.img} width = '170' height = '262'/>
                                 <br/>
                             
                                 <p className ="textIndex">
-                                    <strong>Title:</strong> <a href = {`/comics/${product.id}`}> {product.name}</a>
+                                    <strong>Title:</strong> <a  className='comicPage'  href = {`/comics/${product.id}`}> {product.name}</a>
                                     {' '} <br/>
                                     {/* Description: {product.description} <br/> */}
 
@@ -38,9 +43,7 @@ class Index extends React.Component{
                         )
                     })}
                 </div>
-                <nav >
-                    <a className='create' href='/comics/new'>Create a New Comic</a>
-                </nav>
+                
             </div>
         )
     }

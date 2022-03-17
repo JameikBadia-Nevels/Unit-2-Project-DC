@@ -6,7 +6,7 @@
     /* display: flex;
     flex-wrap: wrap; */
     margin:15px;
-    color:#DB162F ;
+    color:#D16666 ;
 }
 .og{
     display: flex;
@@ -50,6 +50,20 @@ body{
     font-style: italic;
     border-style: solid;
 }
+.picShow{
+    display: flex;
+    justify-content: center;
+}
+.textShow{
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    */
+    display: grid;
+    align-content: center;
+    font-size: 25px;
+
+}
 /* all nav and buttons */
 .submitButton{
     color:#3772FF;
@@ -62,10 +76,14 @@ body{
     font-size: medium;
 }
 .back{
+    padding-right: 77em;
     font-size: medium; 
     color:#DB162F
 }
 .edit{
+    /* display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
     font-size: medium; 
     color:#DB162F
 }
@@ -79,4 +97,22 @@ body{
     color:#3772FF;
     font-size: medium; 
     border-color: #DB162F;
+}
+.comicPage{
+    color:#3772FF;
+    font-size: medium; 
+}
+
+header{
+    color: aqua;
+    color: aquamarine;
+    color: goldenrod; /*booster*/
+    color: olivedrab; /*lanter*/
+    color: rebeccapurple;/* huntress*/
+    color:wheat;/*batman*/
+    color:seagreen; /*aquaman*/
+    color: royalblue;/*nightwing*/
+    color: maroon;/*robin*/
+    color: limegreen;/*maybe arrow*/
+    color:firebrick; /*robin*/
 }

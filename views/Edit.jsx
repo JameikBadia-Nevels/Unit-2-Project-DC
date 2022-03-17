@@ -10,7 +10,8 @@ class Edit extends React.Component{
         <link rel="stylesheet" href="/css/app.css"/>        
             {/* See the Layout takes in a prop called Title and we pass Edit Page to it  note: comments can't go first or last in  jsx return*/}
             {/* form is not complete we will do that below*/}
-        <form class = "form" action={`/comics/${this.props.product._id}?_method=PUT`} method="POST" >
+            <a  className = 'back' href = '/comics'> ⬅️ Back </a>
+        <form className = "form" action={`/comics/${this.props.product._id}?_method=PUT`} method="POST" >
         <strong>Title:</strong> <input type="text" name="name" defaultValue={this.props.product.name}/><br/>
 
         <strong>Description:</strong> <input type="text" name="description"  defaultValue={this.props.product.description}/><br/>
@@ -26,10 +27,12 @@ class Edit extends React.Component{
 
         <strong>Quantity:</strong> <input type = "text" name = "quantity" defaultValue = {this.props.product.qty} /> <br/>
 
+        <strong>Main Character:</strong> <input type = "text" name = "mc" defaultValue = {this.props.product.mc} /> <br/>
+
             <input class = "submitButton" type="submit" value="Submit Changes"/>
             
         </form>
-        <a  className = 'back' href = '/comics'> ⬅️ Back </a>
+        
         </DefaultLayout>
       )
     }
