@@ -22,7 +22,10 @@ const robins = {
     color: 'firebrick' /*robin*/
 }
 const MTO = {
-    color: '#3772FF'
+    color: 'orange'
+}
+const Z = {
+    color: 'mediumorchid'
 }
 class Show extends React.Component{
     render(){
@@ -80,7 +83,7 @@ class Show extends React.Component{
         </div>
             )
         }
-        if (product.mc == 'batgirl' || product.mc == 'huntress'){
+        if (product.mc == 'batgirl' || product.mc == 'huntress' || product.mc == 'catwoman' || product.mc == 'wonder twins'){
             return (
                 <div>
                 <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
@@ -131,7 +134,7 @@ class Show extends React.Component{
     </div>
             )
         }
-        if (product.mc == 'green arrow' || product.mc == 'green lantern' || product.mc == 'martian manhunter'){
+        if (product.mc == 'green arrow' || product.mc == 'green lantern' || product.mc == 'martian manhunter'|| product.mc == 'spectre'){
             return (
                 <div>
                     <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
@@ -182,7 +185,7 @@ class Show extends React.Component{
         </div>
             )
         }
-        if(product.mc == 'robin' || product.mc == 'speedy' || product.mc == 'red hood' || product.mc == 'red robin' || product.mc == 'flash' || product.mc == 'shazam'){
+        if(product.mc == 'robin' || product.mc == 'speedy' || product.mc == 'red hood' || product.mc == 'red robin' || product.mc == 'flash' || product.mc == 'shazam' || product.mc == 'naomi' || product.mc == 'plastic man' || product.mc == 'deadman'){
             return(
                 <div>
                     <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
@@ -233,7 +236,7 @@ class Show extends React.Component{
         </div>
             )
         }
-        if(product.mc == 'nightwing' || product.mc == 'blue beetle' || product.mc == 'static' || product.mc == 'atom' || product.mc == 'superman' || product.mc == 'aqualad'){
+        if(product.mc == 'nightwing' || product.mc == 'blue beetle' || product.mc == 'static' || product.mc == 'atom' || product.mc == 'superman' || product.mc == 'aqualad' || product.mc =='JLA'){
             return(
                 <div>
                     <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
@@ -386,7 +389,7 @@ class Show extends React.Component{
         </div>
             )
         }
-        if(product.mc == 'MTO'){
+        if(product.mc == 'MTO' || product.mc == "deathstroke"){
             return(
                 <div>
                     <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
@@ -437,6 +440,58 @@ class Show extends React.Component{
         </div>
             )
         }
+    
+    if(product.mc == 'zatana'){
+        return(
+            <div>
+                <a  className = 'back' href = '/comics'> ⬅️ Back </a> <a className = "edit" href={`/comics/${product._id}/edit`}>Edit This Comic🖋</a>
+             <h1>{product.name}</h1>
+        
+        
+                <link rel="stylesheet" href="/css/app.css"/>  
+       
+            <div className='picShow'>
+            <img class = 'picture' src ={product.img} /> <br/>
+            </div>
+            <br/><br/>
+
+            
+            <div style = {Z} className= "textShow">
+            
+            <strong>Title:</strong> {product.name}<br/>
+
+            <strong>Description:</strong> {product.description} <br/>
+
+            <strong>Written By:</strong> {product.author} <br/>
+
+            <strong>Artwork By:</strong> {product.art} <br/>
+
+            <strong>Price:</strong> ${product.price}<br/>
+
+            <strong>Quantity:</strong> {product.qty > 0 ? product.qty: 'Out of Stock'}<br/>
+
+             
+            <form  action = {`/comics/${product._id}?_method=PATCH`} method="POST">
+            {product.qty > 0 ? <input className = "buy" type = "submit" value = "BUY"/>: null} 
+            </form> <br/> 
+          
+            
+            <br/>
+            <br/>
+
+             <br/>
+            <br/>
+        
+            <form  action = {`/comics/${product._id}?_method=DELETE`} method="POST">
+
+                <input className = "delete" type = "submit" value = "DELETE"/> 
+
+            </form>
+        </div>
+        
+    </div>
+        )
+    }
         // r
         //what we are passing to show/render on the page 
         
