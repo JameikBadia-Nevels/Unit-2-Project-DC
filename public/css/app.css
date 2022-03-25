@@ -78,13 +78,13 @@ body{
     font-size: medium;
 }
 .back{
-    /* padding-right: 77em; */
+    padding-right: 90%;
     font-size: medium; 
     color:#DB162F
 }
 .edit{
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex;
+    flex-direction: row-reverse; */
     font-size: medium; 
     color:#DB162F
 }
