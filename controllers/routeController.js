@@ -12,9 +12,7 @@ router.get('/new', viewController.new )
 router.delete('/:id', dataController.destroy, viewController.redirectHome);
 // Update
 router.put('/:id', dataController.update, viewController.redirectShow);
-
 router.patch('/:id', dataController.buy, viewController.redirectShow)
-
 // Create
 router.post('/', dataController.create, viewController.redirectHome);
 // Edit

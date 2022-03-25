@@ -25,6 +25,8 @@
     border-style:groove;
     border-radius: 1em;
     border-color:#FDCA40 ;
+    max-width: 500px;
+    max-height: 420px ;
 }
 /* heading */
 h1{
@@ -76,14 +78,13 @@ body{
     font-size: medium;
 }
 .back{
-    padding-right: 77em;
+    /* padding-right: 77em; */
     font-size: medium; 
     color:#DB162F
 }
 .edit{
-    /* display: flex;
+    display: flex;
     flex-direction: row-reverse;
-    flex-direction: column-reverse; */
     font-size: medium; 
     color:#DB162F
 }
